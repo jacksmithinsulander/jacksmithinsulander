@@ -1,8 +1,28 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
 body{
 	color: white;
-	background-image: url("https://i.imgur.com/8pYOADI.jpeg");
+	background-image: linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.85)), url("https://i.imgur.com/8pYOADI.jpeg");
 	background-size: cover;
 	background-color: black;
-	margin-left: Auto;
-	margin-right Auto;
+
+}
+
+.navbar{
+	width: 85%;
+	margin: auto;
+	padding: 35px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.navbar ul li a{
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
 }
