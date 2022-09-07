@@ -34,9 +34,6 @@ h2{
 	position: absolute;
 	right: 0;
 	width: 280px;
-}
-
-.navbar ul li a{
 	text-decoration: none;
 	color: #fff;
 	text-transform: uppercase;
@@ -45,4 +42,6 @@ h2{
 .todaysDate{
 	writing-mode: vertical-rl;
 	text-orientation: mixed;
+	position: absolute;
+	width: 280px;
 }

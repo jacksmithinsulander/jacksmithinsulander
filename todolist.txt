@@ -6,3 +6,4 @@ Personal todo-notes
 4. Adding a funicon
 5. Adding Icons on the website.
 6. IMPORTANT! Make sure to format everything so it's looking consistant. 
+7. Also, I should add a picture of myself on the website too.
