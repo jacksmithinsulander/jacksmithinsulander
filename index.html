@@ -5,30 +5,29 @@
 		<link rel='stylesheet' type='text/css' href="style.css">
 		<meta charset="utf-8"/>
 	</head>
-	<body>		
-		<h1>Jack Smith Insulander  </h1>
-		 <h2>Blockchain Developer, Graphic Artist </h2>
-		<p>The blockchain has been my second home since 2020. Also located in Stockholm, Sweden
-		 </p>
-		<br>
-		
-		<div id="current_date"></p>
-			<script>
-				date = new Date();
-				year = date.getFullYear();
-				month = date.getMonth() + 1;
-				day = date.getDate();
-				document.getElementById("current_date").innerHTML = day + "/" + month + "/" + year;
-			</script>
-		</div>
-		
-		<br>
+	<body>
 		<div class="navbar">
 			<ul>
 				<li><a href="https://github.com/jacksmithinsulander">My Work</a></li>
-				<li><a href="aboutMe.html">Abou Me</a> </li>
+				<li><a href="aboutMe.html">About Me</a> </li>
 				<li><a href="contactMe.html">Contact Me</a></li>
 			</ul>
 		</div>
+		<div class="siteText">		
+			<h1>Jack Smith Insulander  </h1>
+			<h2>Blockchain Developer, Graphic Artist </h2>
+			<p>The blockchain has been my second home since 2020. Besides that, I'm physically located in Stockholm, Sweden</p>
+		</div>
+		<div class="todaysDate">
+			<div id="current_date"></p>
+				<script>
+					date = new Date();
+					year = date.getFullYear();
+					month = date.getMonth() + 1;
+					day = date.getDate();
+					document.getElementById("current_date").innerHTML = day + "/" + month + "/" + year;
+				</script>
+			</div>
+		</div>	
 	</body>
 </html>
