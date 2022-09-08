@@ -26,6 +26,8 @@ body.dark{
 .wrapper{
 	display:flex;
 	justify-content: space-between;
+	align-items: center;
+	align-content: center;
 }
 
 .label{
@@ -83,20 +85,6 @@ h2{
 }
 
 .navbar{
-
-	left: 1000px;
-	top: 300px;
-	margin: auto;
-	font-size:40px;
-	width: 85%;
-	text-decoration: none;
-	color: #fff;
-	text-transform: uppercase;
 }
 
 .todaysDate{
-	position: relative;
-	left: 75px;
-	writing-mode: vertical-rl;
-	text-orientation: mixed;
-}
