@@ -11,7 +11,7 @@ body{
 	background-size: cover;
 	background-color: white;
 	min-height: 100vh;
-	display: flex;
+	display: flex;	
 	align-items: center;
 	justify-content: center;
 }
@@ -88,6 +88,12 @@ h2{
 }
 
 .navbar{
+	font-size: 40px;
 }
 
+a{
+	color:white; 
+	text-decoration: none;
+	text-transform: uppercase;
+}
 
