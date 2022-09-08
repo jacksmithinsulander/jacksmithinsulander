@@ -1,9 +1,9 @@
 Personal todo-notes
 
-1. CSS styling and placing every element how I like it. (kind of done, a lot of more styling to do, also placing elements correctly on the sup domains)
+1. CSS styling and placing every element how I like it. (Needs to be redone, previous CSS styling got ruined during the process)
 2. Potential dropdown menu under "My Work" tag, creating a submenu categorizing my previous work. 
-3. Adding a lightmode / darkmode switch (maybe doing it dynamic to the browser settings too)
+3. Adding a lightmode / darkmode switch(done) (maybe doing it dynamic to the browser settings too(not done))
 4. Adding a funicon (done)
-5. Adding Icons on the website.
+5. Adding Icons on the website (done)
 6. Make sure to format everything so it's looking consistant. 
 7. Also, I should add a picture of myself on the website too. Maybe as an SVG
