@@ -1,14 +1,12 @@
 *{
 	margin: 0;
 	padding: 0;
-	font-family: sans-serif;
+	font-family; "Helvetica CY", "Nimbus Sans L" sans-serif;
 	box-sizing: border-box;
 }
 
 body{
 	display: flex;
-	justify.content: center;
-	align.-items: center;	
 	color: black;	
 	background-image: linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)), url("https://i.imgur.com/wwbPfLg.jpg");
 	background-size: cover;
@@ -44,6 +42,14 @@ body.dark{
 	transform: translateX(24px);
 }
 
+.fa-moon{
+	color: #f1c40f;
+}
+
+.fa-sun{
+	color: #f39c12;
+}
+
 .ball{
 	background-color: #fff;
 	border-radius: 50%;
@@ -55,21 +61,8 @@ body.dark{
 	transition: transform 0.2s linear;
 ]
 
-.fa-moon{
-	color: #f1c40f;
-}
-
-.fa-sun {
-	color: #f39c12;
-}
-
 .siteText{
-	position: relative;
-	top: 0px;
-	right: 150px;
-	margin: auto;
-	width: 50%;
-	padding: 10px;
+
 }
 
 h1{
@@ -83,7 +76,7 @@ h2{
 }
 
 .navbar{
-	position: relative;
+
 	left: 1000px;
 	top: 300px;
 	margin: auto;
