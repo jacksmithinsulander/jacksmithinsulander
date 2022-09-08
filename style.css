@@ -23,13 +23,6 @@ body.dark{
 	background-color: black;
 }
 
-.wrapper{
-	display:flex;
-	justify-content: space-between;
-	align-items: center;
-	align-content: center;
-}
-
 .label{
 	background-color: #111;
 	display: flex;
@@ -68,7 +61,17 @@ body.dark{
 	height: 22px;
 	width: 22px;
 	transition: transform 0.2s linear;
-]
+}
+
+wrapper{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+}
+
+.todaysDate{
+}
 
 .siteText{
 
@@ -87,4 +90,4 @@ h2{
 .navbar{
 }
 
-.todaysDate{
+
