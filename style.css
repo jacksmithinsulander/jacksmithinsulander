@@ -6,12 +6,14 @@
 }
 
 body{
-	display: flex;
 	color: black;	
 	background-image: linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)), url("https://i.imgur.com/wwbPfLg.jpg");
 	background-size: cover;
-	background-color: black;
 	background-color: white;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 body.dark{
@@ -19,6 +21,11 @@ body.dark{
 	background-image: linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.85)), url("https://i.imgur.com/8pYOADI.jpeg");
 	background-size: cover;
 	background-color: black;
+}
+
+.wrapper{
+	display:flex;
+	justify-content: space-between;
 }
 
 .label{
