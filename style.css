@@ -23,6 +23,13 @@ body.dark{
 	background-color: black;
 }
 
+.profilePicture{;
+	background-image:linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)), url("wavesOpacity.svg");
+	background-size:250px 250px;
+	background-color: red;
+	-webkit-mask-image: url("circle.svg");
+}
+
 .label{
 	background-color: #111;
 	display: flex;
@@ -68,9 +75,11 @@ wrapper{
 	justify-content: space-between;
 	align-items: center;
 	align-content: center;
+	padding: 100px 20 vw;
 }
 
 .todaysDate{
+
 }
 
 .siteText{
