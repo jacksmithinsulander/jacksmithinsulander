@@ -6,6 +6,6 @@ Personal todo-notes
 4. Adding a funicon (done)
 5. Adding Icons on the website (done)
 6. Make sure to format everything so it's looking consistant. 
-7. Also, I should add a picture of myself on the website too. Maybe as an SVG(done, but I will neet to style it)
-8. Will also need to add some cache for light/ dark mode. 
-9. Need to write the contents on the "about me" page.
+7. Also, I should add a picture of myself on the website too. Maybe as an SVG(done)
+8. Need to write the contents on the "about me" page.
+9. Hover animation on navbar
