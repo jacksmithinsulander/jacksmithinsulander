@@ -1,12 +1,12 @@
 Personal todo-notes
 
 1. CSS styling and placing every element how I like it. (About done, will just need to remove some <div> tags)
-2. Potential dropdown menu under "My Work" tag, creating a submenu categorizing my previous work. 
-3. Adding a lightmode / darkmode switch(done) (maybe doing it dynamic to the browser settings too(not done))
+2. Potential dropdown menu under "My Work" tag, creating a submenu categorizing my previous work. (highest priority)
+3. Adding a lightmode / darkmode switch(done) (maybe doing it dynamic to the browser settings too(not done(second priority)))
 4. Adding a funicon (done)
 5. Adding Icons on the website (done)
-6. Make sure to format everything so it's looking consistant. 
+6. Make sure to format everything so it's looking consistant. (Doing this last)
 7. Also, I should add a picture of myself on the website too. Maybe as an SVG(done)
-8. Need to write the contents on the "about me" page.
+8. Need to write the contents on the "about me" page. (done)
 9. Hover highlighting on navbar(done)
 10. Figure out why my profilepicture won't show in google chrome? (do they lack svg renderer?)
