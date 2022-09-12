@@ -10,10 +10,14 @@
 <body>
 <main>
 	<header>
-		<figure class="profilePicture">
-			<img src = "sjalvis.svg" width="250px" height="250px"/>
-
-		</figure>		
+		<i class="fas fa-home" aria-hidden="true"><a href "index.html"></i>
+		<nav>
+			<ul class="navLinks">
+				<li><a href="https://github.com/jacksmithinsulander">My Work</a></li>
+				<li><a href="aboutMe.html">About Me</a> </li>
+				<li><a href="contactMe.html">Contact Me</a></li>
+			</ul>
+		</nav>	
 		<span>
 			<input type="checkbox" class="checkbox" id="checkbox">
 			<label for="checkbox" class="label">
@@ -30,8 +34,8 @@
 		</span>
 	</header>
 
-	<article class="wrapper">
-		<div id="current_date"></p>
+	<article>
+		<div id="current_date">
 			<script>
 				date = new Date();
 				year = date.getFullYear();
@@ -40,7 +44,7 @@
 				document.getElementById("current_date").innerHTML = day + "/" + month + "/" + year;
 			</script>
 			<svg height="300" width="7">
-  				<line x1="0" y1="0" x2="0" y2="4000" style="stroke:orange;stroke-width:7" />
+  				<line x1="0" y1="0" x2="0" y2="4000" style="stroke:#ff6d06;stroke-width:7" />
 			</svg>
 		</div>
 		
@@ -49,11 +53,11 @@
 		<h2>Blockchain Developer, Graphic Artist </h2>
 		<p>The blockchain has been my second home since 2020. <br> Besides that, I'm physically located in Stockholm, Sweden</p>
 
-		<nav class="navbar">
-			<p><a href="https://github.com/jacksmithinsulander">My Work</a></p>
-			<p><a href="aboutMe.html">About Me</a> </p>
-			<p><a href="contactMe.html">Contact Me</a></p>
-		</nav>
+		<figure class="profilePicture">
+			<img src = "sjalvis.svg" width="70px" height="70px"/>
+		</figure>	
+
+
 	</article>
 </main>
 
