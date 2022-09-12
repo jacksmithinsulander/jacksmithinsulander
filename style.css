@@ -101,6 +101,8 @@ a{
 	justify-content: space-around;
 	align-items: center;
 	align-content: space-between;
+	padding: 50px;
+	margin: 70px;
 }
 
 .todaysDate{
@@ -110,17 +112,29 @@ a{
 
 .container{	
 	display: inline-flex;
+	justify-content: space-around;
 	align-items: center;
+	align-content: space-between;
+}
+
+article{
+
 }
 
 h1{
-	font-size:25px;
-	height:75px;
+	font-size:35px;
+	height:85px;
+	padding: 0.25ex;
 }
 
 h2{
-	font-size:17px;
-	height:55px;
+	font-size:23px;
+	height:61px;
+	padding: 0.25ex;
+}
+
+p{
+	padding: 0.25ex;
 }
 
 figure{
@@ -128,4 +142,16 @@ figure{
 	background-size: 350px 350px;
 	background-color: #ff6d06;
 	-webkit-mask-image: url("circle.svg");
+	padding: 0.25ex;
+}
+
+footer{
+	text-align: center;
+	background-color: rgb(100,135,220);
+	color: #fff;
+	padding: 20px;
+	position: fixed;
+	bottom: 0;
+	width :100%;
+	height: 60px;
 }
