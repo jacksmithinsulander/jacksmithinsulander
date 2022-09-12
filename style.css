@@ -118,7 +118,9 @@ a{
 }
 
 article{
-
+	display: inline;
+	padding: 10px;
+	margin: 20px;
 }
 
 h1{
@@ -138,11 +140,14 @@ p{
 }
 
 figure{
+	display: inline-flex;
 	background-image: url("wavesOpacity.svg");
 	background-size: 350px 350px;
 	background-color: #ff6d06;
-	-webkit-mask-image: url("circle.svg");
-	padding: 0.25ex;
+	-webkit-mask-image: url("circle.svg");	
+	padding: 10px;
+	margin: 20px;
+
 }
 
 footer{
