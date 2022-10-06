@@ -1,0 +1,17 @@
+Colour pallette: 
+(some might be removed)
+
+#FF6D06 - orange
+#6487DC - blue
+#2D2D2A - deep black
+#DDFFF7 - light blue
+#272838 - "light" black
+#7A6B61 - dim gray
+#E06958 - light red
+#DCA264 - light brown
+#9A7146 - mid brown
+#8B7F68 - lighter gray
+#CEABB1 - purple
+#04B989 - turqoise
+#F2F5FA - White
+

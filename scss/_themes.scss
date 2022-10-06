@@ -1,0 +1,15 @@
+@use "colours" as *;
+@use "sass:map";
+
+$darkTheme:(
+	"date":$orange,
+	"title":$turqoise,
+	"subtitle":$lightBlue,
+	"text":$white
+);
+$lightTheme:(
+	"date":$lightBlack,
+	"title":$lightRed,
+	"subtitle":$deepBlack,
+	"text":$deepBlack
+);

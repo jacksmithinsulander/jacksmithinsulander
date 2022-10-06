@@ -6,14 +6,14 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://kit.fontawesome.com/3d33ae2de1.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
 	<header class="header">
-		<a href="index.html" class="header__home"><i class="fas fa-home" aria-hidden="true"></i></a>
+		<a href="../index.html" class="header__home"><i class="fas fa-home" aria-hidden="true"></i></a>
 		<nav class="header__navbar">
 			<ul class="header__list">
 				<li class="header__item"><a class="header__link" href="#">My Work</a>
@@ -30,10 +30,10 @@
 					</ul>
 				</li>
 				<li class="header__item">
-					<a class="header__link"  href="subdomains/aboutMe.html">About Me</a>
+					<a class="header__link"  href="aboutMe.html">About Me</a>
 				</li>
 				<li class="header__item">
-					<a class="header__link"  href="subdomains/contactMe.html">Contact Me</a>
+					<a class="header__link"  href="contactMe.html">Contact Me</a>
 				</li>
 			</ul>
 		</nav>	
@@ -46,19 +46,30 @@
 			</label>
 		</span>
 	</header>
-	<main id="main" class="main">
-			<div id="date" class="main__date">
-			</div>
-			<h1 class="main__title" id="mainTitle">Jack Smith Insulander</h1>
-			<h2 class="main__subtitle" id="mainSubtitle">Blockchain Developer, Graphic Artist </h2>
-			<p class="main__text" id="mainText">The blockchain has been my second home since 2020. <br> Besides that, I'm physically located in Stockholm, Sweden</p>
-			<img class="main__profilepicture" src="img/profilePicture.webp" alt="Jack">
+	<main id="main" class="main about">
+		<div id="date" class="main__date">
+		</div>		
+		<h1 class="main__title about__title" id="mainTitle">Jack Smith Insulander</h1>
+		<h2 class="main__subtitle about__subtitle" id="mainSubtitle">About Me</h2>
+		
+			<p class="main__text about__text" id="mainText">
+				I am a 26 year old blockchain-developer from Stockholm, Sweden. <br>
+				My main interests are art, computers, economics and music. <br>
+				I have been living of trading crypto currencies since 2020. <br>
+				Studying blockchain-development at Medieinstitutet, Sweden, since 2022. <br>
+				My skills are:
+				<ul class="about__list">
+					<li class="about__item">Deep GNU/Linux knowledge (I use devuan, btw) </li>
+					<li class="about__item">Deep blockchain knowledge</li>
+					<li class="about__item">Financial data analysis </li>
+				</ul>
+			</p>
 	</main>
 	<footer class="footer">
 		<p class="footer__text">Copyright &copy; <script>document.write(new Date().getFullYear());</script>, Jack Smith Insulander </p>
 	</footer>
-	<script src="js/theme.js"></script>
-	<script src="js/cookies.js"></script>
-	<script src="js/date.js"></script>	
+	<script src="../js/theme.js"></script>
+	<script src="../js/cookies.js"></script>
+	<script src="../js/date.js"></script>	
 </body>
 </html>

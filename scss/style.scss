@@ -1,0 +1,267 @@
+@use "colours" as *;
+@use "themes" as *;
+@use "sass:map";
+@import "normalize";
+*{
+	box-sizing:border-box;
+}
+.header, .main, .footer{
+	font-family: "Montserrat", sans-serif;
+}
+.header, .footer{
+	display:flex;
+	align-items: center;
+}
+.header{
+	background:$orange;
+	color:$deepBlack;
+	border-top:2px solid $deepBlack;
+	border-bottom:2px solid $deepBlack;
+	justify-content:space-between;
+	padding:15px 5%;
+	@media (min-width: 769px){
+			padding:15px 10%
+		}
+	&__link{
+		font-weight:bold;
+	}
+	&__home{
+		font-size:1rem;
+		@media (min-width: 481px){
+			font-size:2rem;
+		}
+	}
+	&__home, &__link{
+		color:$deepBlack;
+		text-decoration:none;
+		transition:all 0.3s ease 0s;
+		@media (min-width: 768px){
+			&:hover{
+				color:black;
+			}
+		}
+	}
+	&__navbar{
+		display:relative;
+	}
+	&__link{
+		display:block;
+		padding:0 3px;
+		font-size:0.7rem;
+		@media (min-width: 481px){
+			padding:0 7px;
+			font-size:1rem;
+		}
+	}
+	&__list{
+		list-style-type:none;
+		float:left;
+		padding:0;
+	}
+	&__item{
+		float:left;
+		display:block;
+		padding:0px 3px;
+		position:relative;
+		&:hover .header__dropdown{
+			display:block;
+		}
+		@media (min-width: 481px){
+			padding:0px 7px;
+		}
+	}
+	&__dropdown{
+		display:none;
+		position:absolute;
+		background-color:$white;
+		padding:10px;
+		width:180px;
+		&--content{
+			list-style:none;
+		}
+		&--link{
+			display:block;	
+			padding:8px 14px;
+			&:hover{
+				background-color:$purple;
+				color:black;
+			}
+		}
+	}
+}
+.themeswitch{
+	&__checkbox{
+		opacity:0;
+		position:absolute;
+		&:checked + .themeswitch__label .themeswitch__ball{
+			transform:translateX(24px);
+		}
+	}
+	&__label{
+		background-color:$lightGray;
+		display:flex;
+		align-items:center;
+		justify-content:space-between;
+		border-radius:50px;
+		position:relative;
+		padding:5px;
+		height:26px;
+		width:50px;
+		.fa-moon, .fa-sun{
+			color:$white;
+		}
+	}
+	&__ball{
+		background-color:$deepBlack;
+		position:absolute;
+		border-radius:50%;
+		top:2px;
+		left:2px;
+		width:22px;
+		height:22px;
+		transition:transform 0.2s linear;
+	}
+}
+body{
+	background:linear-gradient($white, $lightBlue, $white) no-repeat center center fixed;
+}
+.main{
+	text-align:center;	
+	/* LIGHT THEME */ 
+	@each $text, $colour in $lightTheme{
+		&__#{$text} {
+			color:$colour;
+		}
+	}
+	&__title{
+		padding-top:20%;
+		margin:0;
+		font-size:3rem;
+		line-height:0.8;
+		text-shadow:2px 2px $lightBlack;
+		@media (min-width: 768px){
+			padding-top:10%;
+			font-size:4rem;
+		}	
+		@media screen and (min-width: 1025px){
+			padding:0;
+		}
+	}
+	&__subtitle{
+		font-size:1rem;
+		@media (min-width: 481px){
+			font-size:1.75rem;
+		}
+		@media (min-width: 1025px){
+			margin:0;
+		}
+	}
+	&__text{
+		font-size:0.8rem;
+		font-weight:bold;
+		@media (min-width: 481px){
+			font-size:1.3rem;
+		}
+		@media (min-width: 1025px){
+			font-size:1rem;
+			margin:0;
+		}
+	}
+	&__date{
+		font-weight:bold;
+		position:absolute;
+		top:80%;
+		left:0;
+		transform:rotate(90deg);
+	}
+	&__profilepicture{
+		display: inline-flex;
+		border-radius:50%;
+		mask-position:center;
+		padding:10px;
+		margin:20px;
+		width:50%;
+		@media screen and (min-width: 769px){
+			width:35%;
+		}
+		@media (min-width: 1025px){
+			width:70%;
+			margin:0;
+			padding:0;
+			grid-column:2;
+			grid-row:1/3;
+		}
+	}
+	&__contactlink{
+		text-decoration:none;
+		color:$blue;
+		&:hover{
+			color:$purple;
+		}
+	}
+	@media (min-width: 1025px){
+		display:grid;
+		grid-template-columns:auto auto;
+		grid-auto-rows:80px;
+		text-align:left;
+		padding:15% 10%;
+	}
+}
+.about{
+	&__list{
+		list-style-type:none;	
+	}
+	&__item{
+		font-weight:bold;
+		color:$deepBlack;
+		font-size:0.666rem;	
+	}
+	@media (min-width:1025px){
+		display:inline;
+		float:left;
+		&__title{
+			padding-bottom:10px;
+		}
+		&__subtitle{
+			padding:20px 0;
+		}
+		&__text{	
+			padding-top:20px;
+		}
+		&__item{
+			font-size:0.9rem;
+		}
+	}
+}
+html.dark{
+	body{
+		background-image:linear-gradient($deepBlack, $dimGray, $deepBlack);
+	}
+	.main{		
+		@each $text, $colour in $darkTheme{
+			&__#{$text} {
+				color:$colour;
+			}
+		}
+		&__contactlink{
+			color:$purple;
+			&:hover{
+				color:$blue;
+			}		
+		}
+	}
+	.about{
+		&__item{
+			color:$white;
+		}
+	}
+}
+.footer{
+	background:$blue;
+	color:$white;
+	position:fixed;
+	left:0;
+	bottom:0;
+	width:100%;
+	justify-content:center;
+}
