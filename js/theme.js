@@ -3,25 +3,25 @@ let darkMode = localStorage.getItem('darkMode');
 const darkModeToggle = document.querySelector('#checkbox');
 
 const enableDarkMode = () => {
-  document.documentElement.classList.toggle('dark');
-  localStorage.setItem('darkMode', 'enabled');
+	document.documentElement.classList.toggle('dark');
+	localStorage.setItem('darkMode', 'enabled');
 }
 
 const disableDarkMode = () => {
-  document.documentElement.classList.toggle('dark');
-  localStorage.setItem('darkMode', null);
+	document.documentElement.classList.toggle('dark');
+	localStorage.setItem('darkMode', null);
 }
 
 if (darkMode === 'enabled') {
-  enableDarkMode();
+	enableDarkMode();
 }
 
 darkModeToggle.addEventListener('click', () => {
-  darkMode = localStorage.getItem('darkMode'); 
+	darkMode = localStorage.getItem('darkMode'); 
   
-  if (darkMode !== 'enabled') {
-    enableDarkMode();
-  } else {  
-    disableDarkMode(); 
-  }
+	if (darkMode !== 'enabled') {
+		enableDarkMode();
+	} else {  
+		disableDarkMode(); 
+	}
 });
