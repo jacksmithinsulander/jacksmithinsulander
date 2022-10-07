@@ -1,5 +1,5 @@
 Colour pallette: 
-(some might be removed)
+(some are unused, but I left them in the project in case I want to extend the website, in order to have new colours available that still matches the current palette)
 
 #FF6D06 - orange
 #6487DC - blue
@@ -14,4 +14,29 @@ Colour pallette:
 #CEABB1 - purple
 #04B989 - turqoise
 #F2F5FA - White
+
+
+Structure:
+└── Root 
+	├── scss				// Directory for raw scss files
+		├── style.scss		// Master stylesheet
+		├── _colours.scss	// Colour palette 
+		├── _normalize.scss	// Normalize
+		└── _themes.scss	// Textcolor-themes for dark/light theme
+	├── css				// Directory for compiled sass
+	├── subdomains			// Directory for every other page than index.html        
+	├── img				// Images used
+	├── documentation		// Documentation and todo lists
+	└── js					// Javascript directory
+		├── date.js			// Javascript for displaying todays date in the corner
+		└── theme.js		// Javascript for toggling between dark/light theme
+
+Do's and dont'ts
+
+Don'ts:										Do's
+Space indentation								Tab Indentation
+camelCase in html file							BEM naming convention
+Set random sass token names						camelCase for sasstokennames
+Separate html and sass parts of code using linebreak	Keep everything as compact as possible
+Spaces in css e.g. main { margin: 10px; }				e.g. main{ margin:10px; }
 

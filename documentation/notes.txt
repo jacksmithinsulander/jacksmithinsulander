@@ -26,4 +26,4 @@
 26. Style phoneview.(done)
 27. Style desktop view(done)
 28. Fix tokenization system for colours(done)
-29. Add lazyloading
+29. Add lazyloading(done)
