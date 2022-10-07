@@ -5,28 +5,25 @@
 5. Write documentation
 6. import google font (done)
 7. Add sass (done)
-8. Phone, tablet and desktop view
+8. Phone, tablet and desktop view(done)
 9. Make sure it looks good zooming in/out (font sizes in rem instead of px) (done)
 10. Check metatags. (done)
 11. Make sure pictures contain alt-descritpions (done)
-12. Make sure website works in, chrome, firefox, edge and safari
+12. Make sure website works in, chrome, firefox, edge and safari(done)
 13. Make sure to use minimum 2 positiontypes besides static(done)
-14. Make sure to use both flex (done) and grid(for dexktop view)
-15. Check css against caniuse.com and shouldiprefix.com
-16. Make sure to separate and have controll when to use % vs vh/vw measures(done)
-17. Post website on github pages(check tutorial)
-18. Compress all images
-19. Use sprites
-20. Make sure you can tab through the website (done)
-21. Colourpalette (check) on aremycolorsaccassible.com
-22. Make colour palette (done)
-23. Import normalize.css(done)
-24. Add image of myself(done)
-25. Work on title(done)
-26. Theme toggle(done)
-27. Navbar dropdown(done)
-28. Style phoneview.(done)
-29. Style tablet view
-30. Style desktop view
-31. Fix tokenization system for colours
-32. Add lazyloading
+14. Make sure to use both flex (done) and grid(for dexktop view)(done)
+15. Make sure to separate and have controll when to use % vs vh/vw measures(done)
+16. Post website on github pages(check tutorial)(done)
+17. Compress all images
+18. Make sure you can tab through the website (done)
+19. Colourpalette (check) on aremycolorsaccassible.com(done)
+20. Make colour palette (done)
+21. Import normalize.css(done)
+22. Add image of myself(done)
+23. Work on title(done)
+24. Theme toggle(done)
+25. Navbar dropdown(done)
+26. Style phoneview.(done)
+27. Style desktop view(done)
+28. Fix tokenization system for colours(done)
+29. Add lazyloading
