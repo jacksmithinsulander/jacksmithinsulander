@@ -4,20 +4,21 @@ const toggleThemeBtn = document.querySelector('#checkbox');
 toggleThemeBtn.addEventListener('click', toggleTheme);
 
 const cookieExists = (document.cookie.match(/^(?:.*;)?\s*themeColor\s*=\s*([^;]+)(?:.*)?$/)||[,null])[1];
-
+console.log('cookie exists', cookieExists)
 if (cookieExists !== null) {
-	currentTheme = cookieExists;
-	} else if (window.matchMedia) {
-	currentTheme = window.matchMedia('(prefers-color-scheme: dark)') ? 'dark' : 'light';
+        currentTheme = cookieExists;
+        } else if (window.matchMedia) {
+        currentTheme = window.matchMedia('(prefers-color-scheme: dark)') ? 'dark' : 'light';
 }
 updateDarkThemeCssClass();
 
 function toggleTheme() {
 	if (currentTheme === 'dark') {
-		document.cookie = "themeColor=light;path=/;
+		document.cookie = "themeColor=light;path=/;"
+		console.log('set cookie', document.cookie)
 		currentTheme = 'light';
 	} else {
-		document.cookie = "themeColor=dark;path=/;
+		document.cookie = "themeColor=dark;path=/;"
 		currentTheme = 'dark';
 	}
 	console.log('toggle theme to', currentTheme);
